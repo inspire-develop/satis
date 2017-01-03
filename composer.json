@@ -25,9 +25,15 @@
         "irc": "irc://freenode.net/composer"
     },
     "bin": ["bin/satis"],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/inspire-develop/composer"
+        }
+    ],
     "require": {
         "php": "^7.2||^8.0",
-        "composer/composer": "^1.9",
+        "composer/composer": "dev-feature/ignore-vcs as 1.0",
         "symfony/console": "^4.4||^5.0",
         "twig/twig": "^2.12||^3.0"
     },
